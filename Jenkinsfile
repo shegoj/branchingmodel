@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ("code verification") {
       when {
-        branch feature*
+        branch 'featurea/1.0'
       }
       steps {
         echo "verifying code done by dev"
@@ -12,7 +12,7 @@ pipeline {
     }
     stage ("code  install and deploy to dev environment") {
       when {
-        branch develop
+        branch 'develop'
       }
       steps {
         echo "verifying code done by dev"
