@@ -17,7 +17,6 @@ pipeline {
       steps {
         echo "verifying code done by dev"
         sh 'mvn clean install'
-# logic to push to develop
       }
     }
   }
